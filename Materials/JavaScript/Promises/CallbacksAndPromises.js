@@ -3,7 +3,7 @@
 // Удобно использовать для отображения ошибки Пользователю после длительного процесса (например скачивания файла),
 // Если файл не был скачен - отобразить ошибку reject Promise
 
-// Example 1 (new Promise)
+// Example #1 (new Promise)
 
 let p = new Promise((resolve, reject) => { // у Promise есть 2 результата: если Promise успешно закончен или failed
     let a = 1 + 1  // сам Promise, если он будет зафейлен - функция выполняет reject часть
@@ -23,7 +23,7 @@ p.then((message) => { // в .then ловим ответ при resolve Promise
 const userLeft = false;
 const userWatchingCatMeme = false;
 
-// Example 2 (Function with Callbacks)
+// Example #2 (Function with Callbacks)
 
 function watchTutorialCallback(callback, errorCallback) {
     if (userLeft) {
@@ -47,7 +47,7 @@ watchTutorialCallback((message) => { // у функции 2 колбэка: дл
     console.log(2, error.name + ' ' + error.message)
 })
 
-// Example 3 (Function with Promise)
+// Example #3 (Function with Promise)
 
 function watchTutorialPromise() {
     return new Promise((resolve, reject) => {
