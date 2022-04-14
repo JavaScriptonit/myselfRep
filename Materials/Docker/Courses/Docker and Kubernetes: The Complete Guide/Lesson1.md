@@ -5,13 +5,13 @@
 3. **Terminal**
 
 ### Installing Redis:
-####4 commands without Docker:
+#### 4 commands without Docker:
 * wget http://download.redis.io/redis-stable.tar.gz
 * tar xvzf redis-stable.tar.gz
 * cd redis-stable
 * make
 
-####Or 1 command with Docker:
+#### Or 1 command with Docker:
 * docker run -it redis
 
 4. **Docker Ecosystem** - Docker is a platform or ecosystem around creating and running software
