@@ -6,6 +6,7 @@
 4. Each container (even with same Name) has its own file system and do not share it with other containers with the same IMAGE name:
 
 andreyshabunov@MBP-Andrej ~ % **docker ps**
+
 CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS      NAMES
 
 5c6cc2325457   busybox   "sh"                     3 minutes ago   Up 3 minutes              ecstatic_merkle
