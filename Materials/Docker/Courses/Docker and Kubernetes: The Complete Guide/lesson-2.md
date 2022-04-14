@@ -7,16 +7,23 @@
 
 andreyshabunov@MBP-Andrej ~ % **docker ps**
 CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS      NAMES
+
 5c6cc2325457   busybox   "sh"                     3 minutes ago   Up 3 minutes              ecstatic_merkle
+
 50851243d9c0   busybox   "sh"                     4 minutes ago   Up 4 minutes              confident_panini
 
 andreyshabunov@MBP-Andrej ~ % **docker run -it busybox sh**
+
 / # **ls**
 bin   dev   etc   home  proc  root  sys   tmp   usr   var
 
 andreyshabunov@MBP-Andrej ~ % **docker run -it busybox sh**    
 / # **ls**
+
 bin   dev   etc   home  proc  root  sys   tmp   usr   var
+
 / # **touch hithere**
+
 / # **ls**
+
 bin      dev      etc      hithere  home     proc     root     sys      tmp      usr      var
