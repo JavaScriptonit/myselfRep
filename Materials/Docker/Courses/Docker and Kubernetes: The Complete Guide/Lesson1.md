@@ -4,13 +4,15 @@
 2. **Redis** - in-memory data store // https://redis.io/topics/quickstart Redis (от англ. remote dictionary server) — резидентная система управления базами данных класса NoSQL с открытым исходным кодом, работающая со структурами данных типа «ключ — значение». Используется как для баз данных, так и для реализации кэшей, брокеров сообщений.
 3. **Terminal** - 
 
-****Installing Redis (4 commands without Docker)****
+****Installing Redis**** 
+4 commands without Docker:
 * wget http://download.redis.io/redis-stable.tar.gz
 * tar xvzf redis-stable.tar.gz
 * cd redis-stable
 * make
+
 ****Or 1 command with Docker:****
-a) docker run -it redis
+* docker run -it redis
 
 4. **Docker Ecosystem** - Docker is a platform or ecosystem around creating and running software
 * Docker Client
@@ -38,6 +40,7 @@ Tool that is responsible for creating images, running containers, etc (maintaini
 https://hub.docker.com/ - javascriptonit - Docker ID, A@@@C@@@@@@ - password, shabunovaa@yandex.ru - email
 
 Commands:
+
 docker version - actual version of installed Docker
 docker run hello-world - Status: Downloaded newer image for hello-world:latest
 _Hello from Docker!
