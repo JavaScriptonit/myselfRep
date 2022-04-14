@@ -1,17 +1,17 @@
 ## 03.01.2022 (1ый раздел) - Dive into Docker!
 
-1. **Docker** (easy and fast install and run new software)
-2. **Redis** - in-memory data store // https://redis.io/topics/quickstart Redis (от англ. remote dictionary server) — резидентная система управления базами данных класса NoSQL с открытым исходным кодом, работающая со структурами данных типа «ключ — значение». Используется как для баз данных, так и для реализации кэшей, брокеров сообщений.
-3. **Terminal** - 
+1. **Docker** - easy and fast install and run new software
+2. **Redis** - in-memory data store. https://redis.io/topics/quickstart Redis (от англ. remote dictionary server) — резидентная система управления базами данных класса NoSQL с открытым исходным кодом, работающая со структурами данных типа «ключ — значение». Используется как для баз данных, так и для реализации кэшей, брокеров сообщений.
+3. **Terminal**
 
-****Installing Redis**** 
-4 commands without Docker:
+### Installing Redis:
+####4 commands without Docker:
 * wget http://download.redis.io/redis-stable.tar.gz
 * tar xvzf redis-stable.tar.gz
 * cd redis-stable
 * make
 
-****Or 1 command with Docker:****
+####Or 1 command with Docker:
 * docker run -it redis
 
 4. **Docker Ecosystem** - Docker is a platform or ecosystem around creating and running software
@@ -39,10 +39,25 @@ Tool that is responsible for creating images, running containers, etc (maintaini
 9. **Installing Docker for MacOS**
 https://hub.docker.com/ - javascriptonit - Docker ID, A@@@C@@@@@@ - password, shabunovaa@yandex.ru - email
 
+10. **Kernel** (ЯДРО) - is a running software process that governs (управляет) access between all the programs that are running on your computer and all the physical hardware that is connected to your computer as well
+
+11. **Namespacing** - Isolating resources per process or group of processes. We can namespace a process to restrict (ограничивать) the area of a hard drive that is available / or the network devices / or the ability to talk to another processes
+
+12. **Control Groups** (cgroups) - a control group can be used to limit the amount of resources that a particular process can use (to limit the amount of memory that a process can use, the amount of CPU, the amount of hard drive, the amount of network)
+
+13. **CPU** (ПРОЦЕССОР)
+
+14. **RAM** (Random-access memory) - is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code
+
+15. **Relationship between Container and an image**: Container is a running process, along with a subset of physical resources on your computer, allocated to that process
+
+16. **Namespacing** and Control groups belongs to Linux. If Docker installed on Mac or Windows - you install Linux virtual machine (Linux Kernel)
+
 Commands:
 
-docker version - actual version of installed Docker
-docker run hello-world - Status: Downloaded newer image for hello-world:latest
+**docker version** - actual version of installed Docker
+**docker run hello-world** - Status: Downloaded newer image for hello-world:latest
+
 _Hello from Docker!
 This message shows that your installation appears to be working correctly._
 
@@ -55,13 +70,6 @@ To generate this message, Docker took the following steps:
 * The Docker daemon streamed that output to the Docker client, which sent it
    to your terminal.
 
-10. **Kernel** (ЯДРО) - is a running software process that governs (управляет) access between all the programs that are running on your computer and all the physical hardware that is connected to your computer as well
-11. **Namespacing** - Isolating resources per process or group of processes. We can namespace a process to restrict (ограничивать) the area of a hard drive that is available / or the network devices / or the ability to talk to another processes
-12. **Control Groups** (cgroups) - a control group can be used to limit the amount of resources that a particular process can use (to limit the amount of memory that a process can use, the amount of CPU, the amount of hard drive, the amount of network)
-13. **CPU** (ПРОЦЕССОР)
-14. **RAM** (Random-access memory) - is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code
-15. **Relationship between Container and an image**: Container is a running process, along with a subset of physical resources on your computer, allocated to that process
-16. **Namespacing** and Control groups belongs to Linux. If Docker installed on Mac or Windows - you install Linux virtual machine (Linux Kernel)
 
 
 
