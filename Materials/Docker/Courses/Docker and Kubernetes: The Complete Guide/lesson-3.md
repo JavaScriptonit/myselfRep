@@ -37,7 +37,8 @@
 ### Example of a Dockerfile:
 
 Use an existing docker image as a base
-FROM alpine // FROM - Instruction telling Docker Server what to do // alpine - Argument to the instruction  
+
+FROM alpine // FROM - Instruction telling Docker Server what to do // alpine - Argument to the instruction
 
 * Download and install a dependency
 
@@ -50,8 +51,6 @@ RUN apk add --update redis // RUN - Instruction telling Docker Server what to do
 CMD ["redis-server"] // CMD - Instruction telling Docker Server what to do // ["redis-server"] - Argument to the instruction
 
 ### When we use "FROM alpine":
-
-**FROM alpine:** 
 
 #### for the first time:
 
