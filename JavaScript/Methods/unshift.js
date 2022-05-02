@@ -1,4 +1,4 @@
-// Добавление или удаления элемента из массива (unshift() method):
+// method adds one or more elements to the beginning of an array
 
 // Example #1
 // const CountriesArray = await page.evaluate((selectors) => {
@@ -11,4 +11,8 @@
 // }, selectors)
 
 // Example #2
-Array.prototype.unshift()
+const array1 = [1, 2, 3];
+
+console.log(2, array1.unshift(4, 5)); // expected output: 5 (the new length of the array)
+
+console.log('2.1', array1); // expected output: Array [4, 5, 1, 2, 3]
