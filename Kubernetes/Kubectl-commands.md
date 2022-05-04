@@ -8,6 +8,8 @@
 
    **kubectl get service** - list of services
 
+   **kubectl get deployments** - list of deployments with number of pods
+
 3. **minikube ip** === print ip
 
 4. **kubectl delete** pod client-pod - deleting pods/services === **DELETE**

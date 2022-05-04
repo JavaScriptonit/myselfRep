@@ -18,4 +18,16 @@
 
    **Deployment** runs a set of identical pods (one or more), monitors the state of each pod, good for DEV and PROD
 
-4. 
+4. In Deployment object type (client-deployment.yaml):
+
+   1. **"TEMPLATE"** section: lists the configuration for every single POD that is created by Deployment file
+
+   2. **"replicas"** section: number of PODS
+
+      to see the number of running pods in Deployment object: _kubectl get deployments_ (**DESIRED**)
+
+   3. **"selector"** section: gets a handle on created POD with labels
+
+5. **Why use Services?** Service object type watches for every POD that matches its selector and automatically route traffic to it (even if IP of POD changed)
+   
+6. 
