@@ -34,6 +34,8 @@
 
     kubectl describe <object type> <object name> === kubectl describe pod client-pod
 
+    kubectl describe pods
+
 13. kubectl get po -A === NAMESPACE NAME READY STATUS RESTARTS AGE
 
 14. **minikube dashboard** === **DASHBOARD**
