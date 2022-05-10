@@ -104,6 +104,7 @@
 
 19. **command + Shift + .** (period) - to make the hidden files appear.
 
+20. docker **push** javascriptonit/multi-client:latest - push changes to the repository (get the LATEST version of IMAGE) on Docker Hub
 
 ### INFO:
 

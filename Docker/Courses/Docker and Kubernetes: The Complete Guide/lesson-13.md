@@ -30,4 +30,16 @@
 
 5. **Why use Services?** Service object type watches for every POD that matches its selector and automatically route traffic to it (even if IP of POD changed)
    
-6. 
+6. ### Update Image version - 
+
+   Change deployment to use multi-client again
+   
+   Update the multi-client image, push to Docker Hub
+   
+   ### Get the deployment to recreate our pods with the latest version of multi-client:
+   
+      https://github.com/kubernetes/kubernetes/issues/33664 - different ways to convince deployment file to update all the pods
+   
+      **Problem**: _deployment.apps/client-deployment unchanged_
+
+7. 
