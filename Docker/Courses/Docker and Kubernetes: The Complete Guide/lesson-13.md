@@ -41,5 +41,13 @@
       https://github.com/kubernetes/kubernetes/issues/33664 - different ways to convince deployment file to update all the pods
    
       **Problem**: _deployment.apps/client-deployment unchanged_
+   
+   ### Solutions:
+   
+   * Delete pods to recreate them with the latest version. **Silly solution**
+   
+   * Tag the image: built images with a real version number and specify version in config file (image: javascriptonit/multi-client:v1). **Adds an extra step in the production deployment process**
+   
+   * Use an imperative command to update the image version the deployment should use. **Uses an imperative command** (kubectl client-deploy update_version v2)
 
 7. 
