@@ -18,7 +18,7 @@
 
 5. **curl** http://192.168.49.2:31515/ - curl: (7) Failed to connect to 192.168.49.2 port 31515: Connection refused
 
-6. kubectl get svc -n namespace - No resources found in namespace namespace.
+6. kubectl get svc -n namespace - No resources found in namespace.
 
 7. kubectl get svc - Check external IP === client-node-port NodePort 10.101.125.42 <none> 3050:31515/TCP  19m
 
@@ -39,3 +39,5 @@
 13. kubectl get po -A === NAMESPACE NAME READY STATUS RESTARTS AGE
 
 14. **minikube dashboard** === **DASHBOARD**
+
+15. **kubectl set** image deployment/client-deployment client=javascriptonit/multi-client:v2 === Imperative command to update image
