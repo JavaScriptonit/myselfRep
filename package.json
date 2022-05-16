@@ -1,0 +1,22 @@
+{
+  "name": "myselfrep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavaScriptonit/myselfRep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavaScriptonit/myselfRep/issues"
+  },
+  "homepage": "https://github.com/JavaScriptonit/myselfRep#readme"
+}
