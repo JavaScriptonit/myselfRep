@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://qa.prod.joinbet.com/casino/lobby",
+  "modifyObstructiveCode": false,
+  "pluginsFile": false,
+  "video": false,
+  "chromeWebSecurity": false
+}
