@@ -12,7 +12,7 @@ describe('My first tests', () => {
     const footerTextData = [
         'Линия',
         'Лайв',
-        'Киб ерспорт'
+        'Киберспорт'
     ]
 
     it('First test', () => {

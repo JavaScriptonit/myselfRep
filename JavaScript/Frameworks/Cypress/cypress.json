@@ -3,5 +3,8 @@
   "modifyObstructiveCode": false,
   "pluginsFile": false,
   "video": false,
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "viewportHeight": 960,
+  "viewportWidth": 1536,
+  "defaultCommandTimeout": 5000
 }
