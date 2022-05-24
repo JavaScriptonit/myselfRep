@@ -60,4 +60,14 @@
    
       * docker push javascriptonit/multi-client:v2
 
-7. 
+7. ### Work with container/logs/shell inside a VM:
+   
+   **eval $(minikube docker-env)** === Virtual Machine logs (look for copy of Docker inside VM)
+
+   **minikube docker-env** === exports some env variables 
+   
+   **docker ps** === Virtual Machine logs after eval $(minikube docker-env)
+
+   **docker logs df0664c1fc94** === logs of a single container "df0664c1fc94   javascriptonit/multi-client"
+   
+8. 
