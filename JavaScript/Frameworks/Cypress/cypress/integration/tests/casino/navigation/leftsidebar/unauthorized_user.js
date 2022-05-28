@@ -114,6 +114,17 @@ describe('[Казино] Левый сайдбар', () => {
   });
 
   it('Провайдеры. Нажать на пункты меню провайдеров', () => {
+    // cy.get(leftSidebar.providersUrls)
+    //   .should('have.length', providersUrlListQa.length)
+    //   .each(($sel, i) => {
+    //     cy.get($sel).should('have.attr', 'data-element')
+    //       .then(($link) => {
+    //         let linkAttributes = '[data-element="' + $link + '"]'
+    //         cy.get(linkAttributes).click();
+    //         cy.url().should('include', providersUrlListQa[i]); // сравнить url каждого открытого провайдера с массивом ссылок
+    //       });
+    //   });
+
     cy.document().then((doc) => {
       let providersUrlArr = Array.from(doc.querySelectorAll(leftSidebar.providersUrls)); // массив селекторов
       const linkAttributes = []; // массив из 'sidebar-link-2236'
