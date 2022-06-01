@@ -5,9 +5,9 @@
      * [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 
 2. Path to production:
-   1. Create
-   2. Test
-   3. Create
-   4. Deploy
+   1. Create config files for each service and deployment
+   2. Test locally on minikube
+   3. Create a GitHub/Travis flow to build images and deploy
+   4. Deploy app to a cloud provider
 
 3. 

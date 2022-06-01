@@ -26,6 +26,8 @@ cd JoinBet, git rm -r node_modules, git push --force, git push --set-upstream or
 
 git commit -m "message" --no-verify === коммит без верификации для обхода ошибок
 
+git sz - для коммита можно использовать команду, которая позволит составить коммит пошагово.
+
 ## HELP:
 
 **generating SSH key** - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
