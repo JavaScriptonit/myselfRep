@@ -24,6 +24,7 @@ cd JoinBet, git rm -r node_modules, git push --force, git push --set-upstream or
 
 --set-upstream origin master --force
 
+git commit -m "message" --no-verify === коммит без верификации для обхода ошибок
 
 ## HELP:
 
