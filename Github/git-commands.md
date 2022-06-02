@@ -26,7 +26,9 @@ cd JoinBet, git rm -r node_modules, git push --force, git push --set-upstream or
 
 git commit -m "message" --no-verify === коммит без верификации для обхода ошибок
 
-git sz - для коммита можно использовать команду, которая позволит составить коммит пошагово.
+**git sz** - для коммита можно использовать команду, которая позволит составить коммит пошагово.
+
+**npx prettier --write .** - format all files with Prettier
 
 ## HELP:
 
