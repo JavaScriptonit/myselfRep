@@ -10,4 +10,8 @@
    3. Create a GitHub/Travis flow to build images and deploy
    4. Deploy app to a cloud provider
 
-3. 
+3. **ClusterIP** - provides access to an object (set of PODS) to everything else inside of our cluster.
+   1. Not allows traffic to come in from the outside world
+   2. Only supposed to be accessed from people already inside of our cluster
+   
+4. 
