@@ -16,6 +16,8 @@
 
    kubectl delete service client-node-port
 
+   kubectl delete deployment client-deployment
+
 5. **curl** http://192.168.49.2:31515/ - curl: (7) Failed to connect to 192.168.49.2 port 31515: Connection refused
 
 6. kubectl get svc -n namespace - No resources found in namespace.
@@ -41,3 +43,7 @@
 14. **minikube dashboard** === **DASHBOARD**
 
 15. **kubectl set** image deployment/client-deployment client=javascriptonit/multi-client:v2 === Imperative command to update image
+
+16. **minikube start** === to start a cluster
+
+17. 
