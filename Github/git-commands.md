@@ -26,6 +26,14 @@ cd JoinBet, git rm -r node_modules, git push --force, git push --set-upstream or
 
 git commit -m "message" --no-verify === коммит без верификации для обхода ошибок
 
+### ТОП 10 команд:
+
+git branch <branch-name> === creating a new branch
+
+git push -u <remote> <branch-name> === to push the new branch into the remote repository
+
+git branch -d <branch-name> === deleting a branch
+
 **git sz** - для коммита можно использовать команду, которая позволит составить коммит пошагово.
 
 **npx prettier --write .** - format all files with Prettier
