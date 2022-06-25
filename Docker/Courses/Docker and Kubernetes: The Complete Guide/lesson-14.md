@@ -1,6 +1,6 @@
 ## 01.06.2022 (14ый раздел) - A multi-container App with Kubernetes
 
-1. **Postgres PVC** - persistent volume claim (PersistentVolumeClaim). A persistentVolumeClaim section in a Pod's volumes block. (PVC) is a request for storage by a user.
+1. **Postgres PVC** - persistent volume claim (PersistentVolumeClaim). A persistentVolumeClaim section in a Pod's volumes block.
 
      * [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 
@@ -20,6 +20,6 @@
       * [The need for Volumes with Databases](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11514746#overview)
       * [Kubernetes Volumes](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11514748#overview)
 
-5. **PersistentVolumeClaim**
+5. **PersistentVolumeClaim** - (PVC) is a request for storage by a user.
 
-6. **PersistentVolume**
+6. **PersistentVolume** - (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
