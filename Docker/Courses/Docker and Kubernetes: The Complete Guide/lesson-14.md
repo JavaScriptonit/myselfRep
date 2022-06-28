@@ -23,3 +23,8 @@
 5. **PersistentVolumeClaim** - (PVC) is a request for storage by a user.
 
 6. **PersistentVolume** - (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
+   1. PV will not be deleted if POD crashes. PV is created outside of POD. All Data is safe.
+   2. Kubernetes Volume is created inside POD but can be used with new Postgres Container cause Volume is created outside Postgres Container.
+   3. PVC
+   
+7. 
