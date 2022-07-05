@@ -20,11 +20,16 @@
       * [The need for Volumes with Databases](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11514746#overview)
       * [Kubernetes Volumes](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11514748#overview)
 
-5. **PersistentVolumeClaim** - (PVC) is a request for storage by a user.
+5. **PersistentVolumeClaim** - (PVC) is a request for storage by a user. Is an advertisement
 
 6. **PersistentVolume** - (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
    1. PV will not be deleted if POD crashes. PV is created outside of POD. All Data is safe.
    2. Kubernetes Volume is created inside POD but can be used with new Postgres Container cause Volume is created outside Postgres Container.
    3. PVC
    
-7. 
+7. **Access modes**:
+   1. ReadWriteOnce - can be used in a single node
+   2. ReadOnlyMany - multiple nodes can read from this
+   3. ReadWriteMany - can be read and written to by many nodes
+   
+8. **Provisioner** - [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/). To see places where to create storage in cloud. List of options, cloud Providers (Google Cloud Persistent Disk, Azure File, Azure Disk, AWS Block Store).

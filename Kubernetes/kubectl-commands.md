@@ -10,6 +10,8 @@
 
    **kubectl get deployments** - list of deployments with number of pods
 
+   kubectl get storageclass - options on PC that kubernetes has for creating PV
+
 3. **minikube ip** === print ip
 
 4. **kubectl delete** pod client-pod - deleting pods/services === **DELETE**
@@ -37,6 +39,8 @@
     kubectl describe <object type> <object name> === kubectl describe pod client-pod
 
     kubectl describe pods
+
+    kubectl describe storageclass - to see info about option
 
 13. kubectl get po -A === NAMESPACE NAME READY STATUS RESTARTS AGE
 
