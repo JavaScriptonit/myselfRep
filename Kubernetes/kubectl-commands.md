@@ -12,6 +12,10 @@
 
    kubectl get storageclass - options on PC that kubernetes has for creating PV
 
+   kubectl get pv - list of volumes
+
+   kubectl get pvc - list of claims
+
 3. **minikube ip** === print ip
 
 4. **kubectl delete** pod client-pod - deleting pods/services === **DELETE**
