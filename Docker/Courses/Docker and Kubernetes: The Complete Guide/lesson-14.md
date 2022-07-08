@@ -33,3 +33,9 @@
    3. ReadWriteMany - can be read and written to by many nodes
    
 8. **Provisioner** - [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/). To see places where to create storage in cloud. List of options, cloud Providers (Google Cloud Persistent Disk, Azure File, Azure Disk, AWS Block Store).
+
+9. **Secret** - new type of object. 
+   1. Creating a secret: kubectl create secret **generic** (or **tls** - HTTPS setup) <secret name> --from-literal key=value (PGPASSWORD=password123)
+   2. kubectl create secret generic pgpassword --from-literal **PGPASSWORD=password123**
+   
+10. 

@@ -54,4 +54,6 @@
 
 16. **minikube start** === to start a cluster
 
-17. 
+17. kubectl **create** secret generic pgpassword --from-literal PGPASSWORD=password123
+
+18. 
