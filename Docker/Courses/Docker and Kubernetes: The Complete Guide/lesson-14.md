@@ -37,5 +37,3 @@
 9. **Secret** - new type of object. 
    1. Creating a secret: kubectl create secret **generic** (or **tls** - HTTPS setup) <secret name> --from-literal key=value (PGPASSWORD=password123)
    2. kubectl create secret generic pgpassword --from-literal **PGPASSWORD=password123**
-   
-10. 
