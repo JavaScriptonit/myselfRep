@@ -55,5 +55,8 @@
 16. **minikube start** === to start a cluster
 
 17. kubectl **create** secret generic pgpassword --from-literal PGPASSWORD=password123
+    * repeat creating pgpassword after deleting minikube
+    * or pods (postgres-deployment/server-deployment) will get errors: CreateContainerConfigError:
+    * Error: secret "pgpassword" not found
 
 18. 
