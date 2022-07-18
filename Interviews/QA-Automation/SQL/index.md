@@ -2,6 +2,6 @@
 
 ### Skills you should have:
 
-#### Linux
+#### MySQL:
 
 1. 

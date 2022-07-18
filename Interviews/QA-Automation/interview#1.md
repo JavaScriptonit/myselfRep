@@ -46,7 +46,12 @@
 
 
 8. API и WEB. Какими инструментами пользуетесь для тестирования API?
-   1. Postman, SoapUI, Fiddler, Charles, Cypress, Puppeteer
+   1. Postman, 
+   2. SoapUI, 
+   3. Fiddler, 
+   4. Charles, 
+   5. Cypress, 
+   6. Puppeteer
 
 
 9. API и WEB. Какие популярные брокеры сообщений (очереди) Вы знаете?
