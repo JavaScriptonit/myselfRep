@@ -1,0 +1,7 @@
+## How to prepare for QA Engineer interviews?
+
+### Skills you should have:
+
+#### Linux
+
+1. 

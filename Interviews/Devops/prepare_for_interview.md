@@ -2,7 +2,7 @@
 
 Note: the following is opinionated.
 
-### Skills you should have
+### Skills you should have:
 
 #### Linux
 
