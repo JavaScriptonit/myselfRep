@@ -88,3 +88,16 @@ uniqueSurname(myArray);
 // The Set object lets you store unique values of any type, whether primitive values or object references.
 // Set objects are collections of values. A value in the Set may only occur once; it is unique in the Set's collection.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+
+// 3ий вариант решения задач:
+const getNameAndSurname = (arr) => arr.map(e => `${e.surname} ${e.charname}`);
+console.log('Example #1', getNameAndSurname(myArray));
+
+const getTotalAmountOfSalaries = (arr) => arr.reduce((a, b) => a + b.salary, 0);
+console.log('Example #2', getTotalAmountOfSalaries(myArray));
+
+const getNamesWithRoseSurname = (arr) => arr.filter(e => e.surname === 'Rose').map(e => e.charname);
+console.log('Example #3', getNamesWithRoseSurname(myArray));
+
+const getCountOfUniqueSurnames = (arr) => new Set(arr.map(e => e.surname)).size;
+console.log('Example #4', getCountOfUniqueSurnames(myArray));
