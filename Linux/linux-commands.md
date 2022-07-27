@@ -20,4 +20,5 @@
 
    $ rm -r directoryname - If the directory is not empty, the correct way to remove the directory and all its contents recursively is to use
 
-8. 
+8. **node -p** "crypto.randomBytes(16).toString('hex')" - get a random password using Node from the terminal
+   1. d01ce7056fb2eab425161dcfa5bdb502
