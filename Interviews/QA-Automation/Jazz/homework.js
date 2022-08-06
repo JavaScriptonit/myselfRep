@@ -4,9 +4,9 @@ const p1 = Promise.resolve(10);
 const p2 = Promise.resolve(20);
 const p3 = Promise.resolve(30);
 
-// Promise.all([p1, p2, p3]).then(values => {
-//   console.log(values);
-// });
+Promise.all([p1, p2, p3]).then(values => {
+  console.log('Вывод промисов через Promise.all: ', values);
+});
 
 // Выведет:
 // [1, 2, 3]

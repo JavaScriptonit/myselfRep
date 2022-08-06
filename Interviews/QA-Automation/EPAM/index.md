@@ -7,7 +7,8 @@
 ### Secondary skills:
 1. Puppeteer / Cypress - Automation **frameworks**
 2. Axios - for testing **API**
-3. Jest / Chai / Mocha - фреймворки/библиотеки
+3. msw - for testing **server** requests
+4. Jest / Chai / Mocha - фреймворки/библиотеки
 
 ### Обязанности:
 1. Работа в 3х командах: Web, Mobile и API
