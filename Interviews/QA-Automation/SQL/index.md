@@ -1,4 +1,5 @@
 #### MySQL:
+[SQL Aggregate Functions](https://www.zentut.com/sql-tutorial/sql-aggregate-functions/) - SQL aggregate functions syntax and SQL aggregate function examples.
 
 ### What are Constraints in SQL?
 Constraints are used to specify the rules concerning data in the table.\
