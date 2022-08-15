@@ -21,6 +21,23 @@
       6. Set the Name to multi-cluster
       7. Confirm the Zone location
       8. Click the CREATE button at the bottom of the form
-   6. Add deployment scripts to the repo
+   6. [Add deployment scripts to the repo:](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628214#overview)
+      1. Install Google Cloud SDK CLI
+      2. Configure the SDK without Google Cloud auth info
+         1. [CREATE SERVICE ACCOUNT:](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/25408376#overview)
+            1. Hamburger menu > IAM & Admin > Service Accounts
+            2. CREATE SERVICE ACCOUNT > Service account name to travis-deployer (step 1) > CREATE button (step 2)
+            3. Select a role filter > scroll > Kubernetes Engine > Kubernetes Engine Admin > CONTINUE
+            4. skip Grant users access > DONE
+            5. Click the three dots > Manage Keys in the dropdown
+            6. ADD KEY > Create new key > CREATE button (JSON)
+            7. The JSON key file should now download to your computer (should be encrypted and upload to Travis CI)
+      3. Login to Docker CLI
+      4. Build the 'test' version of multi-client
+      5. Run tests
+      6. If tests are successful, run a script to deploy newest images
+      7. Build all our images, tag each one, push each to Docker hub
+      8. Apply all configs in the 'k8s' folder
+      9. Imperatively set latest images on each deployment
    
 2. 
