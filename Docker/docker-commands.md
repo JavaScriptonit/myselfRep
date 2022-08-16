@@ -44,7 +44,10 @@
 
 15. docker run **-p 3000:3000 -v /app/node_modules -v ~/frontend:/app andreyshabunov:frontend**
 
-16. ### TESTS: 
+16. docker run -it -v $(pwd):/app ruby:2.4 sh === With this version, we will no longer be passing the --no-rdoc or --no-ri flags when installing Travis. The command will simply be: 
+    1. gem install travis
+
+17. ### TESTS: 
 
     1. docker run -it andreyshabunov:frontend npm run test = Running Test Suits (**App.test.js**) inside the container - WITHOUT REFRESH
     
