@@ -19,3 +19,4 @@
    6. add service-account.json.enc to GitHub (100% safe to upload to the public rep)
    7. "#" exit
    8. "#" ls - to check files in folder
+

@@ -34,10 +34,19 @@
             7. The JSON key file should now download to your computer (should be encrypted and upload to Travis CI)
       3. Login to Docker CLI
       4. Build the 'test' version of multi-client
+         1. Running tests with Travis:
+            1. add - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin in travis.yml file
+            2. add username and password in project (Environment variables) [travis project settings](travis-ci.org)
+            3. DOCKER_USERNAME - travis login
+            4. DOCKER_USERNAME - your password
       5. Run tests
+         1. add script command in travis.yml file: 
+         2. docker run -e CI=true javascriptonit/react-test npm test
       6. If tests are successful, run a script to deploy newest images
       7. Build all our images, tag each one, push each to Docker hub
       8. Apply all configs in the 'k8s' folder
       9. Imperatively set latest images on each deployment
    
-2. 
+2. Running Travis CLI in a container with Ruby pre-installed:
+   1. Watch running Travis CLI flow in Docker/Courses/Docker and Kubernetes: The Complete Guide/travisCliContainer.md - [travisCliContainer.md](https://github.com/JavaScriptonit/myselfRep/blob/main/Docker/Courses/Docker%20and%20Kubernetes:%20The%20Complete%20Guide/travisCliContainer.md)
+   2. 
