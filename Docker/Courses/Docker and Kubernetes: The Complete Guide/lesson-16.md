@@ -43,10 +43,22 @@
          1. add script command in travis.yml file: 
          2. docker run -e CI=true javascriptonit/react-test npm test
       6. If tests are successful, run a script to deploy newest images
+         1. uses deploy.sh file from /multi-k8s folder
       7. Build all our images, tag each one, push each to Docker hub
+         1. update deploy.sh file and .travis.yml
       8. Apply all configs in the 'k8s' folder
+         1. Create secret file Once for a single Kubernetes cluster in [Cloud Shell](console.cloud.google.com)
+         2. $ gcloud config set project id - update property [core/project]
+         3. $ gcloud config set compute/zone us-central1-a - update property [compute/zone]
+         4. $ gcloud container clusters get credentials multi-cluster - generating entry for multi-cluster
       9. Imperatively set latest images on each deployment
    
-2. Running Travis CLI in a container with Ruby pre-installed:
+2. Running **Travis** CLI in a container with Ruby pre-installed:
    1. Watch running Travis CLI flow in Docker/Courses/Docker and Kubernetes: The Complete Guide/travisCliContainer.md - [travisCliContainer.md](https://github.com/JavaScriptonit/myselfRep/blob/main/Docker/Courses/Docker%20and%20Kubernetes:%20The%20Complete%20Guide/travisCliContainer.md)
-   2. 
+3. Creating **Secret** in Google Cloud CLI [creating a secret](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628268#overview):
+   1. Command: $ kubectl create secret generic pgpassword --from-literal PGPASSWORD=password123
+4. Installing **HELM** in Google Cloud CLI [HELM setup](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628276#overview):
+   1. curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+   2. chmod 700 get_helm.sh
+   3. ./get_helm.sh
+5. 
