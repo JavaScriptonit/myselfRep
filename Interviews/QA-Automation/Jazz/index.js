@@ -4,8 +4,8 @@ const p1 = Promise.resolve(1);
 const p2 = Promise.resolve(2);
 const p3 = Promise.resolve(3);
 
-// promiseAll([p1, p2, p3]).then(values => {
-//   console.log(values);
+// Promise.all([p1, p2, p3]).then(values => {
+//   console.log('Вывод через Promise.all: ', values);
 // });
 
 // Выведет:
@@ -30,7 +30,7 @@ const p3 = Promise.resolve(3);
 // }
 
 // Решение Михаила:
-function promiseAll(array) {
+function AndreyFunction(array) {
     return new Promise((resolve, reject) => {
         const results = [];
         let counter = 0;
@@ -53,8 +53,36 @@ function promiseAll(array) {
 }
 
 
-promiseAll([p1, p2, p3]).then((value) => {
-    console.log(value);
+// AndreyFunction([p1, p2, p3]).then((value) => {
+//     console.log('Вывод без Promise.all: ', value);
+// }).catch((error) => {
+//     console.log('ERROR' + error);
+// })
+
+const promise1 = Promise.resolve('3');
+const promise2 = Promise.resolve(42);
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, 'foo');
+});
+
+Promise.all([promise1, promise2, promise3]).then((values) => {
+    console.log('Вывод через Promise.all разных Promise: ', values);
 }).catch((error) => {
-    console.log('ERROR' + error);
+    console.log('Promise.all ERROR: ' + error);
+});
+
+const promises = [promise1, promise2, promise3];
+
+const ArtemFunction = (promises) => {
+    promises.forEach((promise) => {
+        return promise.then(() => console.log('ArtemFunction: ', promise)).catch((e) => console.log(`ArtemFunction Error: ${e}`));
+    });
+};
+
+ArtemFunction(promises);
+
+AndreyFunction([promise1, promise2, promise3]).then((value) => {
+    console.log('AndreyFunction без Promise.all: ', value);
+}).catch((error) => {
+    console.log('AndreyFunction ERROR: ' + error);
 })

@@ -53,12 +53,35 @@
          4. $ gcloud container clusters get credentials multi-cluster - generating entry for multi-cluster
       9. Imperatively set latest images on each deployment
    
-2. Running **Travis** CLI in a container with Ruby pre-installed:
-   1. Watch running Travis CLI flow in Docker/Courses/Docker and Kubernetes: The Complete Guide/travisCliContainer.md - [travisCliContainer.md](https://github.com/JavaScriptonit/myselfRep/blob/main/Docker/Courses/Docker%20and%20Kubernetes:%20The%20Complete%20Guide/travisCliContainer.md)
-3. Creating **Secret** in Google Cloud CLI [creating a secret](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628268#overview):
-   1. Command: $ kubectl create secret generic pgpassword --from-literal PGPASSWORD=password123
-4. Installing **HELM** in Google Cloud CLI [HELM setup](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628276#overview):
-   1. curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-   2. chmod 700 get_helm.sh
-   3. ./get_helm.sh
-5. 
+   7. Running **Travis** CLI in a container with Ruby pre-installed:
+      1. Watch running Travis CLI flow in Docker/Courses/Docker and Kubernetes: The Complete Guide/travisCliContainer.md - [travisCliContainer.md](https://github.com/JavaScriptonit/myselfRep/blob/main/Docker/Courses/Docker%20and%20Kubernetes:%20The%20Complete%20Guide/travisCliContainer.md)
+   8. Creating **Secret** in Google Cloud CLI [creating a secret](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628268#overview):
+      1. Command: $ kubectl create secret generic pgpassword --from-literal PGPASSWORD=password123
+   9. Installing **HELM** in Google Cloud CLI [HELM setup](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628276#overview):
+      1. ```curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3```
+      2. ```chmod 700 get_helm.sh```
+      3. ```./get_helm.sh```
+   10. Modify the configuration of our cluster by **Tiller**:
+       1. [Helm + Tiller](https://helm.sh/docs/intro/quickstart/#helm)
+       2. Command we issue -> Helm Client -> Tiller Server
+       3. **RBAC** - Role Based Access Control:
+          1. Limits who can access and modify objects in our cluster
+          2. Enabled on Google Cloud by default
+          3. Tiller wants to make changes to our cluster, so it needs to get some permissions set
+       4. 2 sets of definitions:
+          1. User accounts - identifies a person administering our cluster
+             1. ```$ kubectl create serviceaccount --namespace kube-system tiller```
+          2. Service accounts - identifies a pod administering a cluster
+          3. ClusterRoleBinding - authorizes an account to do a certain set of actions across the entire cluster
+             1. ```$ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller```
+          4. RoleBinding - authorizes an account to do a certain set of actions in a single namespace
+       5. $ helm init --service-account tiller --upgrade === final step of HELM install
+       6. [Ingress-nginx with Helm](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628280#overview)
+          1. $ helm install stable/nginx-ingress --name my-nginx --set rbac.create=true
+          2. Google Cloud Platform -> multi-k8s -> Kubernetes Engine -> Workloads -> 
+             1. my-nginx-nginx-ingress-controller === IP address for the project (Endpoints)
+          3. Google Cloud Platform -> multi-k8s -> Kubernetes Engine -> Workloads -> 
+             1. my-nginx-nginx-default-backend === default backend page of the project (404 Page)
+       7. [Deployment CHECK](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628292#overview)
+          1. [A Workflow for Changing in Prod](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628294#overview)
+

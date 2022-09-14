@@ -16,6 +16,8 @@
 
    kubectl get pvc - list of claims
 
+   kubectl get namespaces - list of namespaces
+
 3. **minikube ip** === print ip
 
 4. **kubectl delete** pod client-pod - deleting pods/services === **DELETE**
