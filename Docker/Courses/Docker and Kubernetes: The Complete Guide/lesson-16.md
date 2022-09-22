@@ -84,4 +84,12 @@
              1. my-nginx-nginx-default-backend === default backend page of the project (404 Page)
        7. [Deployment CHECK](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628292#overview)
           1. [A Workflow for Changing in Prod](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11628294#overview)
+             1. Check out a branch
+             2. Make changes
+             3. Commit changes
+             4. Push to GitHub branch
+             5. Create a PR
+             6. Wait for tests to show up 'green'
+             7. Merge the PR
+             8. See changes appear on prod
 
