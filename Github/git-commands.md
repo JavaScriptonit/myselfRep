@@ -47,3 +47,11 @@ git branch -d <branch-name> === deleting a branch
 **personal access TOKENS** - https://github.com/settings/tokens
 
 **Travis-ci API token/Deploy key/User key/Password** - https://docs.travis-ci.com/user/private-dependencies/
+
+**To add co-authors to a commit:**
+```
+Commit message
+
+Co-authored-by: Joel Califa <602352+califa@users.noreply.github.com>
+Co-authored-by: Matt Clark <44023+mclark@users.noreply.github.com>
+```
