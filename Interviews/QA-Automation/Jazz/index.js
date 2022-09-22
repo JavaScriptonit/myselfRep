@@ -65,3 +65,5 @@ AndreyFunction(promises2).then((value) => {
 }).catch((error) => {
     console.log('AndreyFunction ERROR: ' + error);
 })
+
+// pull request close check
