@@ -1,13 +1,16 @@
 ### NPM vs YARN project update:
 1. Check **npm**, **nvm** and **node** versions:
-   1. ```nvm -v```
-   2. ```node -v```
-   3. ```npm -v```
-   4. ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh```
-   5. ```. ~/.nvm/nvm.sh```
-   6. ```nvm use```
-   7. ```install node 16.13.2```
-   8. ```touch ~/.zshrc touch ~/.bash_profile``` or ```touch ~/.bash_profile``` or ```source ~/.bash_profile``` or ```~/.zshrc``` or ```. ~/.zshrc```
+   1. ```$ nvm -v```
+   2. ```$ node -v```
+   3. ```$ npm -v```
+   4. ```$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh```
+   5. ```$ . ~/.nvm/nvm.sh```
+   6. ```$ nvm use```
+   7. ```$ install node 16.13.2```
+   8. ```$ touch ~/.zshrc touch ~/.bash_profile``` or ```$ touch ~/.bash_profile``` or ```$ source ~/.bash_profile``` or ```$ ~/.zshrc``` or ```$ . ~/.zshrc```
+   9. ```$ nvm list-remote``` - check the available Node.js versions
+   10. ```$ nvm install v16.13.2``` - Proceed and install the Node.js 16.x version that you want
+   11. ```$ nvm use 16.13.2``` - change version
 
 2. ### NPM:
    1. ```npm ci```
