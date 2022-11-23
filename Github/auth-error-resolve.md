@@ -9,3 +9,10 @@
 * `git pull origin`
 * `git config user.name`
 * `git config`
+
+## [Update an expired token](https://www.jetbrains.com/help/idea/github.html#register-account)
+## [Create token in GitHub:](https://github.com/settings/tokens)
+* Settings
+* Developer settings
+* Personal access tokens
+* Tokens (classic)
