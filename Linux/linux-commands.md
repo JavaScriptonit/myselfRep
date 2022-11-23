@@ -22,3 +22,7 @@
 
 8. **node -p** "crypto.randomBytes(16).toString('hex')" - get a random password using Node from the terminal
    1. d01ce7056fb2eab425161dcfa5bdb502
+
+9. `/Applications/Webstorm.app/Contents/MacOS/webstorm` - Webstorm OPEN from Terminal
+   * to see the logs
+   * open without icon search
