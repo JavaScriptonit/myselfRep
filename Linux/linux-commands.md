@@ -26,3 +26,9 @@
 9. `/Applications/Webstorm.app/Contents/MacOS/webstorm` - Webstorm OPEN from Terminal
    * to see the logs
    * open without icon search
+
+10. **cat** - reads data from the file and outputs it (short for concatenate)
+    * `cat app/package.json | jq -r .version` - from .gitlab-ci.yaml
+
+11. **jq** - a command-line tool for parsing JSON
+    * `cat app/package.json | jq -r .version` - from .gitlab-ci.yaml
