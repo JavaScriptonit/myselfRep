@@ -2,41 +2,43 @@
 
 ### Установка репозитория локально:
 
-git clone https://github.com/joinbet/joinbet-QA.git - клонирует проект в рабочую директорию
+`git clone https://github.com/joinbet/joinbet-QA.git` - клонирует проект в рабочую директорию
 
-yarn install - устанавливает зависимости для работы проекта
+`yarn install` - устанавливает зависимости для работы проекта
 
 ### Добавления репозитория в проект, техническая информация:
 
-git init - инициализация репозитория (Git "включается" или "запускается" для данного репозитория)
+`git init` - инициализация репозитория (Git "включается" или "запускается" для данного репозитория)
 
-git remote add origin https://github.com/eurostavka/joinbet-QA.git - это добавление "короткого имени", такого как origin
+`git remote add origin https://github.com/eurostavka/joinbet-QA.git` - это добавление "короткого имени", такого как origin
 
-rm -rf .git - если error: remote origin already exists. - удалить файл из гита
+`rm -rf .git` - если error: remote origin already exists. - удалить файл из гита
 
-git init - после удаления снова включить гит. Ответ: Initialized empty Git repository in /Users/andreyshabunov/PhpstormProjects/Joinbet-QA/.git
+`git init` - после удаления снова включить гит. Ответ: Initialized empty Git repository in /Users/andreyshabunov/PhpstormProjects/Joinbet-QA/.git
 
-git add . - добавить репозиторий. Ответ: adding embedded git repository: JoinBet
+`git add .` - добавить репозиторий. Ответ: adding embedded git repository: JoinBet
 
 ### Команды, использованные для пуша (проект был добавлен в 2 репозитория):
 
-cd JoinBet, git rm -r node_modules, git push --force, git push --set-upstream origin master, git push
-
---set-upstream origin master --force
-
-**git commit -m "message" --no-verify** === коммит без верификации для обхода ошибок
+* `cd JoinBet`, 
+* `git rm -r node_modules`, 
+* `git push --force`, 
+* `git push --set-upstream origin master`, 
+* `git push`
+* `--set-upstream origin master --force`
+* `git commit -m "message" --no-verify` === коммит без верификации для обхода ошибок
 
 ### ТОП 10 команд:
 
-git branch <branch-name> === creating a new branch
+`git branch <branch-name>` === creating a new branch
 
-git push -u <remote> <branch-name> === to push the new branch into the remote repository
+`git push -u <remote> <branch-name>` === to push the new branch into the remote repository
 
-git branch -d <branch-name> === deleting a branch
+`git branch -d <branch-name>` === deleting a branch
 
-**git sz** - для коммита можно использовать команду, которая позволит составить коммит пошагово.
+`git sz` - для коммита можно использовать команду, которая позволит составить коммит пошагово.
 
-**npx prettier --write .** - format all files with Prettier
+`npx prettier --write .` - format all files with Prettier
 
 ## HELP:
 
