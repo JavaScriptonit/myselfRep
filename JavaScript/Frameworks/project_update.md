@@ -5,12 +5,11 @@
    3. ```$ npm -v```
    4. ```$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh```
    5. ```$ . ~/.nvm/nvm.sh```
-   6. ```$ nvm use```
-   7. ```$ install node 16.13.2```
+   6. ```$ nvm install node 16.13.2``` - Proceed and install the Node.js 16.x version that you want
+      1. `Downloading and installing node v19.3.0...`
+   7. ```$ nvm use 16.13.2``` - change version
    8. ```$ touch ~/.zshrc touch ~/.bash_profile``` or ```$ touch ~/.bash_profile``` or ```$ source ~/.bash_profile``` or ```$ ~/.zshrc``` or ```$ . ~/.zshrc```
    9. ```$ nvm list-remote``` - check the available Node.js versions
-   10. ```$ nvm install v16.13.2``` - Proceed and install the Node.js 16.x version that you want
-   11. ```$ nvm use 16.13.2``` - change version
 
 2. ### NPM:
    1. ```npm ci```
