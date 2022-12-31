@@ -15,5 +15,3 @@
    **- /app/node_modules** - leave this folder as it is INSIDE THE CONTAINER
    
    **- ./server:/app** - look at the server directory and COPY everything inside there INTO /app folder of container
-
-

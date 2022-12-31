@@ -69,7 +69,3 @@ To generate this message, Docker took the following steps:
    executable that produces the output you are currently reading.
 * The Docker daemon streamed that output to the Docker client, which sent it
    to your terminal.
-
-
-
-

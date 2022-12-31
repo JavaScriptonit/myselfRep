@@ -69,5 +69,3 @@
    **docker ps** === Virtual Machine logs after eval $(minikube docker-env)
 
    **docker logs df0664c1fc94** === logs of a single container "df0664c1fc94   javascriptonit/multi-client"
-   
-8. 

@@ -36,4 +36,3 @@
       2. ClusterIP Service
          1. default-backend pod
    2. [Studying the Kubernetes Ingress system](https://www.joyfulbikeshedding.com/blog/2018-03-26-studying-the-kubernetes-ingress-system.html)
-   3. 

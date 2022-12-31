@@ -26,4 +26,4 @@
 
    **- docker build -f Dockerfile.dev .**
    
-   **- docker run** 
+   **- docker run**

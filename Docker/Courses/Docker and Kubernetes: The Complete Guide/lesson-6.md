@@ -70,4 +70,3 @@
 4. 1st line —> **FROM node:alpine as builder**
 
 5. Second container starts with installing NGINX and COPYING all files from /usr/frontend/build folder and creating a PRODUCTION server NGINX with NPM installed
-

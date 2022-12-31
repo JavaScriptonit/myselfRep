@@ -60,5 +60,3 @@
     * repeat creating pgpassword after deleting minikube
     * or pods (postgres-deployment/server-deployment) will get errors: CreateContainerConfigError:
     * Error: secret "pgpassword" not found
-
-18. 
