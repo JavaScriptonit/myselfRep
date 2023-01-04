@@ -6,5 +6,23 @@
     * Create server (Jenkins-server)
     * Create firewall (Jenkins-firewall)
     * SSH Jenkins-server from terminal:
-      * install Docker
-      * install Jenkins: `docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts `
+      * `$ chmod 400 ~/Downloads/jenkins-server-key.pem ` - to get permission
+      * `$ ssh -i ~/Downloads/jenkins-server-key.pem ubuntu@ec2-3-95-183-114.compute-1.amazonaws.com` - SSH server
+      * `$ sudo apt-get update` - always update on fresh servers
+      * `$ sudo apt  install docker.io` - install Docker
+      * `$ sudo usermod -aG docker $USER` - [Add your user to the docker group](https://docs.docker.com/engine/install/linux-postinstall/)
+      * `$ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts` - install Jenkins
+
+
+* Jenkins initialize (2 ways to get the password):
+* 1st way:
+  * `docker ps` - to take docker container ID
+  * `docker exec -it c417ef8192c4 bash` - enter to a docker container
+  * `cat /var/jenkins_home/secrets/initialAdminPassword` - get password from Docker container using path from Jenkins server Login page
+    * `625ba8a9181e4af0a78224585fbb16df` - output
+* 2nd way:
+  * `docker volume inspect jenkins_home` - to get from the volume on the server
+    * `/var/lib/docker/volumes/jenkins_home/_data`
+  * `sudo ls /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword` - to get password file path
+  * `sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword` - to see the password
+    * `625ba8a9181e4af0a78224585fbb16df` - output
