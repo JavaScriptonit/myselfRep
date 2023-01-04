@@ -26,3 +26,16 @@
   * `sudo ls /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword` - to get password file path
   * `sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword` - to see the password
     * `625ba8a9181e4af0a78224585fbb16df` - output
+
+
+* Configure Jenkins:
+  * `docker exec -u 0 -it c417ef8192c4 bash` - enter container as a root user
+  * `apt update` - update packages
+  * `apt install curl` - install curl
+  * `curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh` - to get "nodesource" script
+    * [how-to-install-node-js-on-ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+  * `ls` - check file "nodesource_setup.sh"
+  * `bash nodesource_setup.sh` - run script
+  * `apt install nodejs` - install nodejs
+  * `node -v` - check node version
+  * `npm -v` - check npm version
