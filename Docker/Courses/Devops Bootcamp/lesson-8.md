@@ -39,3 +39,23 @@
   * `apt install nodejs` - install nodejs
   * `node -v` - check node version
   * `npm -v` - check npm version
+
+
+* Create Jenkins Jobs:
+* Types of jobs:
+  * Freestyle project
+    * `my-job` - name
+    * `Execute shell` - add build step to allow executing shell commands
+      * `npm --version` - add shell commands
+  * Pipeline
+  * Multi-configuration project
+  * Folder
+  * GitHub Organization
+  * Multibranch Pipeline
+
+* Run Jenkins jobs:
+  * Jenkins -> my-job -> Build now -> Build history -> Console output:
+    * Shows All steps from the job
+    * To add new steps with new packages SHOULD first install plugins and configure them or directly install packages on Jenkins server to use commands in console:
+      * Nodejs/npm/nvm/maven
+  * 
