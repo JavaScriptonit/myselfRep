@@ -53,9 +53,36 @@
   * GitHub Organization
   * Multibranch Pipeline
 
+
 * Run Jenkins jobs:
   * Jenkins -> my-job -> Build now -> Build history -> Console output:
     * Shows All steps from the job
     * To add new steps with new packages SHOULD first install plugins and configure them or directly install packages on Jenkins server to use commands in console:
       * Nodejs/npm/nvm/maven
-  * 
+    * **To configure steps - enter "Build" window in the Job**
+
+
+* Configure Git Repository:
+  * **To configure GIT - enter "Source Code Management" window in the Job**
+  * Enter Repo URL
+  * Enter/Create Credentials
+  * Enter Branch Name
+
+
+After configuring and Running Job Jenkins will:
+* Clone Repo
+  * `git init`
+  * `git fetch`
+  * `git config`
+  * `git checkout`
+  * `git commit` - update Jenkins file
+* Use SHELL commands
+* To Check FILES on Jenkins Server - SH server, enter container and `$ ls` "jobs" folder
+  * Builds/Jobs/Logs
+
+
+* Run .sh file in Git Repo:
+  * Set Branch Name in "Source Code Management"
+  * Enter SHELL command in "Build" window:
+    * `$ chmod +x freestyle-build.sh` - give execute permission to the file to Jenkins user
+    * `$ ./freestyle-build.sh`
