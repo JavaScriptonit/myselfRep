@@ -25,6 +25,3 @@ console.log(3, palindrome(example3));
 // Example #4
 let example4 = "123456789876543210";
 console.log(4, palindrome(example4));
-
-
-
