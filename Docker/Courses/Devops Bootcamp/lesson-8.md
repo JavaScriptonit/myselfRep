@@ -86,5 +86,3 @@ After configuring and Running Job Jenkins will:
   * Enter SHELL command in "Build" window:
     * `$ chmod +x freestyle-build.sh` - give execute permission to the file to Jenkins user
     * `$ ./freestyle-build.sh`
-
-
