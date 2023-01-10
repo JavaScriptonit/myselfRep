@@ -86,3 +86,10 @@ After configuring and Running Job Jenkins will:
   * Enter SHELL command in "Build" window:
     * `$ chmod +x freestyle-build.sh` - give execute permission to the file to Jenkins user
     * `$ ./freestyle-build.sh`
+
+
+* Create Jenkins file:
+  * [Example](https://gitlab.com/JavaScriptonit/java-maven-app)
+  * Create different type of Jobs - [Difference](https://techworld-with-nana.teachable.com/courses/1108792/lectures/28665214):
+    * Freestyle job (Relying on plugins)
+    * Pipeline job
