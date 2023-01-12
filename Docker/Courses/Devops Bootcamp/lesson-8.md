@@ -93,3 +93,5 @@ After configuring and Running Job Jenkins will:
   * Create different type of Jobs - [Difference](https://techworld-with-nana.teachable.com/courses/1108792/lectures/28665214):
     * Freestyle job (Relying on plugins)
     * Pipeline job
+  * `139.59.140.177:8080/env-vars.html` - list of all env variables
+  * 
