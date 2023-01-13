@@ -94,4 +94,3 @@ After configuring and Running Job Jenkins will:
     * Freestyle job (Relying on plugins)
     * Pipeline job
   * `139.59.140.177:8080/env-vars.html` - list of all env variables
-  * 
