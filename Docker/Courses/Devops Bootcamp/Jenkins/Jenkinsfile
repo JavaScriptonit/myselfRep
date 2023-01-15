@@ -36,3 +36,5 @@ pipeline {
         }
     }
 }
+
+// https://techworld-with-nana.teachable.com/courses/devops-bootcamp/lectures/28665213 - Jenkinsfile Syntax

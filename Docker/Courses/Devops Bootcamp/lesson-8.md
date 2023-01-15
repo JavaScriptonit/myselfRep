@@ -94,3 +94,8 @@ After configuring and Running Job Jenkins will:
     * Freestyle job (Relying on plugins)
     * Pipeline job
   * `139.59.140.177:8080/env-vars.html` - list of all env variables
+
+
+* Create script.groovy file:
+  * When have a lot of logic in Jenkins file just use groovy functions (Easy to read)
+  * `/myselfRep/Docker/Courses/Devops Bootcamp/Jenkins/script.groovy`
