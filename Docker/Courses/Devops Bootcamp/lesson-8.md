@@ -99,3 +99,11 @@ After configuring and Running Job Jenkins will:
 * Create script.groovy file:
   * When have a lot of logic in Jenkins file just use groovy functions (Easy to read)
   * `/myselfRep/Docker/Courses/Devops Bootcamp/Jenkins/script.groovy`
+
+
+* Create multi-branch Pipeline:
+  * `my-multi-branch-pipeline` - name of Pipeline, example
+  * `multibranch Pipeline` - Pipeline type
+  * Nice overview of which branches are built after Running the Pipeline
+  * Add "if"/"when expression" to Jenkinsfile to run build/deploy stages only for master branch
+    * [Link - Intro to Multibranch Pipeline](https://techworld-with-nana.teachable.com/courses/1108792/lectures/28665217)
