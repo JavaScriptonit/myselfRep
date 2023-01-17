@@ -19,3 +19,4 @@ def deployApp() {
 return this
 
 // https://techworld-with-nana.teachable.com/courses/1108792/lectures/28665212 - Create complete Pipeline
+// https://gitlab.com/JavaScriptonit/java-maven-app/-/blob/master/script.groovy - Example of script file

@@ -38,3 +38,4 @@ pipeline {
 }
 
 // https://techworld-with-nana.teachable.com/courses/devops-bootcamp/lectures/28665213 - Jenkinsfile Syntax
+// https://gitlab.com/JavaScriptonit/java-maven-app/-/edit/master/Jenkinsfile - Example of Jenkins file
