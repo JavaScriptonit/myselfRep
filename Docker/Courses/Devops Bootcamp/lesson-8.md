@@ -89,7 +89,7 @@ After configuring and Running Job Jenkins will:
 
 
 * Create Jenkins file:
-  * [Example](https://gitlab.com/JavaScriptonit/java-maven-app)
+  * [Example from java-maven-app](https://gitlab.com/JavaScriptonit/java-maven-app)
   * Create different type of Jobs - [Difference](https://techworld-with-nana.teachable.com/courses/1108792/lectures/28665214):
     * Freestyle job (Relying on plugins)
     * Pipeline job
