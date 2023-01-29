@@ -2,10 +2,10 @@
 
 * [Push to the private Docker Registry](https://techworld-with-nana.teachable.com/courses/1108792/lectures/28664051)
   * Install Docker on Jenkins Container (the same way as "npm"):
-    * `docker run -p 8080:8080 -p 50000:50000 -d \
--v jenkins_home:/var/jenkins_home \
--v /var/run/docker.sock:/var/run/docker.sock \
--v $(which docker):/usr/bin/docker jenkins/jenkins:lts`
+    * `docker run -p 8080:8080 -p 50000:50000 -d`
+      * `-v jenkins_home:/var/jenkins_home`
+      * `-v /var/run/docker.sock:/var/run/docker.sock`
+      * `-v $(which docker):/usr/bin/docker jenkins/jenkins:lts`
   * Give permission in the Jenkins container to the Jenkins USER as a root user
     * `docker exec -u 0 -it "container_id" bash` - login as a root user
     * `chmod 666` - giver permission (666 - read and write)
