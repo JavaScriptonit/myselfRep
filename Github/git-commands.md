@@ -44,6 +44,8 @@
 
 **generating SSH key** - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
+`ssh-keygen -t rsa` - создать SSH ключ в /Users/andreyshabunov/.ssh/id_rsa.pub
+
 **converter PUB to PDF** - https://pubtopdf.com/
 
 **personal access TOKENS** - https://github.com/settings/tokens
