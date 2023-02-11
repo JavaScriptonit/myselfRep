@@ -1,8 +1,9 @@
 ## Why Virtualization?
 
 * `With Virtualization`
-  * Virtual Machine Image
-    * You can have backups of your entire OS
+  * Virtual Machine Image (**VMI**)
+    * You can have backups of your entire OS (since it's a file, just like a picture/text document)
+    * Copy VMI called **Snapshots**
 * `Without Virtualization`
   * OS is tightly coupled to the hardware
 
