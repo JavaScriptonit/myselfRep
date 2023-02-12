@@ -15,6 +15,10 @@
    * https://ubuntu.com/download/desktop
 4. Install Linux OS
    * Start: normal start on VM
+     * if [error - Kernel driver not installed](https://stackoverflow.com/questions/65149373/kernel-driver-not-installed-rc-1908-getting-errors-in-macos-big-sur-11-0-1)
+       * `sudo kextload -b org.virtualbox.kext.VBoxDrv` - load and install the latest version
+       * Go into System Preferences->Security & Privacy
+       * Approve the software by Oracle
 5. Enable copying
    * Settings => Advanced:
      * Shared Clipboard: Bidirectional
