@@ -16,6 +16,7 @@
    * `ls -R Downloads/` - show all files and directories with included files
    * `ls -a` - **show HIDDEN files**
    * `ls -l` - **show PERMISSIONS files**
+   * `ls -la` - **show HIDDEN PERMISSIONS files**
    * `lscpu` - cpu info
    * `lsmem` - memory info
    * `ls /sbin` - **SUPER USER COMMANDS**

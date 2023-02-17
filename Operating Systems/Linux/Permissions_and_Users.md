@@ -35,6 +35,45 @@
 
 
 ## Ownership & Permissions:
+
 * `sudo chown anna:admin test.txt` - change user and group ownership of a file
   * `sudo chown anna test.txt` - change user ownership
   * `sudo chgrp devops test.txt` - change group ownership
+
+
+## Linux permissions:
+
+* File type:
+  * "-" regular file
+  * "d" directory
+  * "c" character device file
+  * "l" symbolic link
+* user owner permission:
+  * "r" read
+  * "w" write
+  * "x" execute
+  * "-" no permission
+* group owner permission:
+  * "r" read
+  * "w" write
+  * "x" execute
+  * "-" no permission
+* other system users permission:
+  * "r" read
+  * "w" write
+  * "x" execute
+  * "-" no permission
+
+
+## Change permissions:
+
+Single change permission (Symbolic mode):
+* `sudo chmod -x api` - delete execute permissions from "api" folder for all owners
+* `sudo chmod g-w test.txt` - delete write permissions from "test.txt" file for a group
+* `sudo chmod g+x test.txt` - add execute permissions to "test.txt" to the group
+
+Multiple change permissions (Set permission):
+* `sudo chmod g=rwx test.txt` - add rwx permissions to "test.txt" to the group
+
+Absolute (Numeric Mode):
+* `sudo chmod 777 test.txt` - add rwx permissions to "test.txt" to the group/user/other users
