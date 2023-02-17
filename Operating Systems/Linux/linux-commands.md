@@ -15,6 +15,7 @@
    * `ls /usr` - X11		X11R6		bin		lib		libexec		local		sbin		share		standalone
    * `ls -R Downloads/` - show all files and directories with included files
    * `ls -a` - **show HIDDEN files**
+   * `ls -l` - **show PERMISSIONS files**
    * `lscpu` - cpu info
    * `lsmem` - memory info
    * `ls /sbin` - **SUPER USER COMMANDS**
