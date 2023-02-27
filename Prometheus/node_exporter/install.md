@@ -4,6 +4,8 @@
 
 [prometheus/node_exporter/releases](https://github.com/prometheus/node_exporter/releases)
 
+[collect-prometheus-metrics](https://grafana.com/blog/2022/05/10/how-to-collect-prometheus-metrics-with-the-opentelemetry-collector-and-grafana/)
+
 
 1. `ifconfig` - get ip
    * `inet` - inet 127.0.0.1 netmask 0xff000000
@@ -64,7 +66,7 @@
      scrape_configs:
       - job_name: node
         static_configs:
-         - targets: ['localhost:9100']
+         - targets: ['localhost:9100', '127.0.0.1:9100']
            remote_write:
       - url: https://prometheus-us-central1.grafana.net/api/prom/push
         basic_auth:
