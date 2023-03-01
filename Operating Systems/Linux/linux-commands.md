@@ -74,7 +74,6 @@
     * `cat cicd-kubeconfig.yaml | less` - print pages and delete after view
     * `ls | less` - print pages and delete after view 
 
-
 2. `| grep` - filter command:
     * `history | grep sudo` - filter by "sudo"
     * `history 20 | grep sudo | less` - filter by "sudo" with less command
@@ -88,10 +87,8 @@
 1. `>` - redirect command with creating file or rewrite existing one:
     * `history 20 | grep sudo > sudo-commands.txt` - create file with sudo-commands
 
-
 2. `>>` - redirect command with adding new lines to existing file:
    * `history 20 | grep rm >> sudo-rm-commands.txt` - add rm commands to existing file
-
 
 3. `;` - when using independent commands
    * `clear; sleep 1; echo "Hello world"` - executes 3 commands 1 after another in 1 command line 

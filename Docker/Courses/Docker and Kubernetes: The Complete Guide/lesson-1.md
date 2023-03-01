@@ -38,6 +38,8 @@ Tool that is responsible for creating images, running containers, etc (maintaini
 
 9. **Installing Docker for MacOS**
 https://hub.docker.com/ - javascriptonit - Docker ID, A@@@C@@@@@@ - password, shabunovaa@yandex.ru - email
+   * `brew install --cask docker` - install docker with brew cask 
+     * `cask` is for GUI programs install
 
 10. **Kernel** (ЯДРО) - is a running software process that governs (управляет) access between all the programs that are running on your computer and all the physical hardware that is connected to your computer as well
 
