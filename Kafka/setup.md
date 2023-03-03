@@ -131,3 +131,14 @@ read messages from the topic
     * Consumer 4 <<group.id>> - poll messages (3)
 
 
+#### Kafka consumer Offset - (last consumed message by Group)
+* Offset topic - информация о переданных сообщениях брокером до Consumer'а
+  * в Offset topic данные хранятся в field/value (Partition=A/0/Group=X/Offset=2)
+* Если 1 Consumer упал, 2ой Consumer берёт информацию из Offset topic по последнему переданному сообщению
+  * После этого запрашивает новые сообщения из партиции topic A
+* Offsets можно хранить в собственной БД, а не использовать системный customer topic offsets
+* `offsets.retention.minutes` - 7 days
+* `__customer_offsets` - offsets deleted from
+* `auto.offset.reset` - after group activation
+  * `earliest`
+  * `latest`
