@@ -75,3 +75,7 @@
    ```
    
    * `./grafana-agent-darwin-amd64 --config.file=agent-config.yaml` - Run the agent
+
+
+## Architecture
+[prometheus.io/docs/introduction/overview/](https://prometheus.io/docs/introduction/overview/)
