@@ -1,0 +1,3 @@
+
+001 Course-Material-Download
+https://courses.datacumulus.com/downloads/kafka-cluster-setup-s21

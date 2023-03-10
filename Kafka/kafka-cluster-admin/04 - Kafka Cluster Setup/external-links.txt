@@ -1,0 +1,27 @@
+
+001 Kafka-Documentation
+https://kafka.apache.org/documentation/
+
+003 Kafka-Brokers-Configuration-list
+https://kafka.apache.org/documentation/#brokerconfigs
+
+011 Kafka-Manager
+https://github.com/yahoo/kafka-manager
+
+019 Design-and-Deployment-Considerations-for-Deploying-Apache-Kafka-on-AWS
+https://www.confluent.io/blog/design-and-deployment-considerations-for-deploying-apache-kafka-on-aws/
+
+019 Deploying-Apache-Kafka-on-AWS-Elastic-Block-Store-EBS-
+https://www.confluent.io/blog/deploying-apache-kafka-on-aws-elastic-block-store-ebs/
+
+021 Kafka-Broker-Configuration-List
+https://kafka.apache.org/documentation/#brokerconfigs
+
+022 Landoop-Kafka-Topics-UI
+https://github.com/Landoop/kafka-topics-ui
+
+022 Confluent-Schema-Registry
+http://docs.confluent.io/current/schema-registry/docs/index.html
+
+022 Confluent-Kafka-REST-Proxy
+http://docs.confluent.io/current/kafka-rest/docs/index.html

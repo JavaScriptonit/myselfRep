@@ -1,0 +1,45 @@
+
+001 Zookeeper-Documentation
+https://zookeeper.apache.org/
+
+002 What-is-the-actual-role-of-Zookeeper-in-Kafka
+https://www.quora.com/What-is-the-actual-role-of-ZooKeeper-in-Kafka
+
+004 Zookeeper-Configuration-Doc
+https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#ch_deployment
+
+005 AWS-Signup-Page
+https://console.aws.amazon.com/billing/home
+
+006 Windows-How-to-SSH-into-EC2-instance-using-Putty
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+006 Accessing-EC2-instances-in-Linux-Mac
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+
+006 SSH-to-instances-from-the-browser
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+
+009 More-Zookeeper-CLI-examples
+https://www.tutorialspoint.com/zookeeper/zookeeper_cli.htm
+
+012 Zookeeper-Four-Letter-Word-Documentation
+https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_zkCommands
+
+016 What-is-Docker-
+https://www.docker.com/what-docker
+
+017 Netflix-Exhibitor
+https://github.com/soabase/exhibitor
+
+017 Zookeeper-UI-web-
+https://github.com/DeemOpen/zkui
+
+017 Zookeeper-GUI-desktop-Windows-
+https://github.com/echoma/zkui
+
+017 ZK-web
+https://github.com/qiuxiafei/zk-web 
+
+017 ZooNavigator
+https://github.com/elkozmon/zoonavigator

@@ -1,0 +1,18 @@
+
+001 Optimising-your-Apache-Kafka-deployment
+https://www.confluent.io/wp-content/uploads/Optimizing-Your-Apache-Kafka-Deployment.pdf 
+
+001 Confluent-Documentation-on-running-Kafka-with-Docker
+http://docs.confluent.io/current/cp-docker-images/docs/
+
+001 How-to-Monitor-Kafka
+https://blog.serverdensity.com/how-to-monitor-kafka/
+
+001 Datadog-Kafka-Monitoring
+https://www.datadoghq.com/blog/monitoring-kafka-performance-metrics/
+
+001 Confluent-Documentation-on-how-to-monitor-Kafka
+http://docs.confluent.io/current/kafka/monitoring.html
+
+001 Blog-How-we-monitor-and-run-Kafka-at-Scale
+https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
