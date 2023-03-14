@@ -1,7 +1,9 @@
 version: "3"
+
 volumes:
   broker1:
   broker2:
+
 services:
   broker1:
     image: 'bitnami/kafka:latest'
@@ -19,6 +21,8 @@ services:
       KAFKA_KRAFT_CLUSTER_ID: r4zt_wrqTRuT7W2NJsB_GA
     volumes:
       - broker1:/bitnami/kafka
+
+
   broker2:
     image: 'bitnami/kafka:latest'
     container_name: broker2
@@ -35,6 +39,8 @@ services:
       KAFKA_KRAFT_CLUSTER_ID: r4zt_wrqTRuT7W2NJsB_GA
     volumes:
       - broker2:/bitnami/kafka
+
+
   kafka-ui:
     container_name: kafka-ui
     image: 'provectuslabs/kafka-ui:latest'
