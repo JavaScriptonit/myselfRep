@@ -25,6 +25,8 @@
 
 
 * Broker shell:
+  * `/opt/bitnami/kafka/bin` - path for bitnami broker
+  * `./kafka-topics.sh --create --bootstrap-server broker1:9092 --replication-factor 1 --partitions 1 --topic users4` - create topic on bitnami broker
   * `./kafka-topics --list --bootstrap-server kafka1:19092` - list of topcis
   * `./kafka-console-producer --bootstrap-server kafka1:19092 --topic users` - connect to broker producer
 
