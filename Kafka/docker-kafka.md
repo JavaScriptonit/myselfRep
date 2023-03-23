@@ -6,7 +6,11 @@
 ## [Run Apache Kafka using Docker](https://www.youtube.com/watch?v=8ZTTcAWMIAE)
 * Install packages on Broker:
   * `yum install net-tools` - install tool from confluent repository
-  * `netstat -na` - check all active sockets and ports
+  * `netstat` - shows the state of all configured interfaces (Active Internet connections) - [Using the netstat command](https://www.ibm.com/docs/sl/aix/7.2?topic=command-using-netstat)
+    * `netstat -na` - check all active sockets and ports (Active Internet connections (including servers))
+    * `netstat -s` - shows statistics for each protocol
+    * `netstat -a` - shows the state of all sockets
+    * `netstat -m` - displays the network memory's cluster pool statistics
   * `ifconfig` - check container IP
 
 
