@@ -1,0 +1,38 @@
+version: '3'
+services:
+
+  selenoid:
+    image: aerokube/selenoid:latest-release
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "~/.aerokube/selenoid:/etc/selenoid/"
+      - "~/.aerokube/selenoid/:/opt/selenoid/video/"
+      - "~/.aerokube/selenoid/logs/:/opt/selenoid/logs/"
+      - "/etc/selenoid/browsers.json:/etc/selenoid/browsers.json" # добавленный volume
+    ports:
+      - 4444:4444
+#      - 8000:8000
+#      - 8080:8080
+    command: ["-limit", "10", "-conf", "/etc/selenoid/browsers.json", "-disable-docker"]
+    networks:
+      - selenoid-net
+
+
+  selenoid-ui:
+    image: aerokube/selenoid-ui
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    command: [ "--selenoid-uri", "http://selenoid:4444" ]
+    #    environment:
+    #      - OVERRIDE_SELENOID_HOST=http://selenoid:4444/wd/hub
+    ports:
+      - 8080:8080
+    depends_on:
+      - selenoid
+    networks:
+      - selenoid-net
+
+
+networks:
+  selenoid-net:
+    driver: bridge

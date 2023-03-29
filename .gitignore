@@ -40,3 +40,5 @@ Thumbs.db
 
 __i18n__
 .env.local
+
+/Selenoid/node_modules
