@@ -2,7 +2,7 @@
 ## [.gitlab-ci.yml keyword reference](https://docs.gitlab.com/ee/ci/yaml/index.html)
 
 
-`Global keywords` that configure pipeline behavior:
+### Global keywords that configure pipeline behavior:
 
 `default`	Custom default values for job keywords.\
 `include`	Import configuration from other YAML files.\
@@ -11,7 +11,7 @@
 `workflow`	Control what types of pipeline run.
 
 
-`Jobs` configured with job keywords:
+### Jobs configured with job keywords:
 
 `after_script`	Override a set of commands that are executed after job.\
 `allow_failure`	Allow job to fail. A failed job does not cause the pipeline to fail.\
