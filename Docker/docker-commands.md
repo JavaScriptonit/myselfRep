@@ -12,6 +12,20 @@
 
 5. docker build **-f Dockerfile.dev -t andreyshabunov:frontend .**
 
+
+### DOCKER PULL:
+1. docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+   1. docker image pull debian - pull image
+   2. docker image pull debian:bullseye - pull iamge:version
+      1. docker images
+         1. REPOSITORY   TAG        IMAGE ID       CREATED        SIZE\
+            debian       bullseye   4eacea30377a   8 days ago     124MB\
+            debian       latest     4eacea30377a   8 days ago     124MB
+   3. docker pull ubuntu:22.04 - pull iamge:version
+   4. docker image pull myregistry.local:5000/testing/test-image - pull from a different registry
+   5. docker image pull --all-tags ubuntu - pull all images
+
+
 ### DOCKER RUN:
 
 1. docker run **-it** redis - запуск image Redis с возможностью вводить команду внутри контейнера
