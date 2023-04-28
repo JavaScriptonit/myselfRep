@@ -92,3 +92,14 @@
 
 3. `;` - when using independent commands
    * `clear; sleep 1; echo "Hello world"` - executes 3 commands 1 after another in 1 command line 
+
+
+### Restart UBUNTU server:
+
+1. `reboot` - restart server
+2. `sudo reboot` - avoid errors
+3. `sudo systemctl reboot`
+4. `sudo /sbin/reboot` - reboot to load and apply updates
+5. `sudo reboot now` - immediately restart
+6. `sudo reboot -f` - force reboot
+7. 
