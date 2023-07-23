@@ -1,3 +1,4 @@
+# Add all versions in this folder /examples/mts and redo path /mts not /mts-zip-tests
 stages:
   - run tests
 
