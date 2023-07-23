@@ -1,0 +1,60 @@
+stages:
+  - run tests
+
+variables:
+  ENV:
+    value: "test"
+    description: "Стенд"
+  TAGS:
+    value: "@API"
+    description: "Теги тестов, которые будут запущены. Формат @All / @All and not @Disabled и т.д."
+  FORK_COUNT:
+    value: "5"
+    description: "Количество потоков"
+  BROWSER:
+    value: 'chrome'
+    description: 'Доступные значения: chrome, firefox, opera, ie'
+  VARIABLES_FILE: "$CI_PROJECT_DIR/variables.txt"
+
+run tests:
+  stage: run tests
+  when: manual
+  allow_failure: true
+  image: sregistry.mts.ru/platform_qa/maven-3.8.5-openjdk-17
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" || $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "web"
+      when: always
+  tags:
+    - ui_tests_runner
+  script:
+    - zip -v
+    - which zip
+    # - mvn clean test -P$ENV -Dos.family=linux "-Dtags=$TAGS" -Dfork.count=$FORK_COUNT -Dbrowser.profile=chrome,selenoid
+
+  after_script:
+    - echo "CI_JOB_STATE_TESTS=$CI_JOB_STATUS" >> dotenv.env
+    - PIPELINE_ID="$CI_PROJECT_URL/pipelines/$CI_PIPELINE_ID"
+    - mkdir -p ./target/allure-results
+    - ls /builds/qa/partners-personal-office/target
+    - ls /builds/qa/partners-personal-office
+    - ls /builds/qa/partners-personal-office/target/allure-results
+    
+    - pwd
+    - cd ./target/allure-results && zip -q -r ../allure-results.zip . && cd ..
+  
+    # - echo "CI_JOB_STATE_TESTS=$CI_JOB_STATUS" >> build.env
+    # - ALLURE_FILE_PATH=$CI_PROJECT_DIR/allure-report/complete.html
+    # - echo $ALLURE_FILE_PATH
+    # - echo "ALLURE_FILE_PATH=$ALLURE_FILE_PATH" >> build.env
+    # - find $CI_PROJECT_DIR -name complete.html -print
+  
+  artifacts:
+    when: always
+    expire_in: 1d
+    name: "$CI_JOB_NAME"
+    paths:
+      - ./allure-results.zip
+    reports:
+      dotenv: build.env
