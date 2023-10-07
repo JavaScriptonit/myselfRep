@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=oUeOLfwfQOU
+https://www.youtube.com/watch?v=oUeOLfwfQOU - Реальное собеседования DevOps инженер Junior++
 
 Писали докер файл самостоятельно?
 
